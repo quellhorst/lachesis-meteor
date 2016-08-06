@@ -1,7 +1,7 @@
-# lachesis
+# Lachesis
 
-Automatically Pulls and Saves current bitcoin prices.
-High performance API is provided for fetching current price.
+Automatically fetches and saves current Bitcoin prices.
+A high performance API is provided for fetching current price.
 
 #### API
 
@@ -11,10 +11,17 @@ returns
 
 `{  "price": "585.51" }`
 
-### needed to run this so nimble:restivus wouldn't error
+### Running in Development
+`meteor run --port 8081`
+
+### Install Nodets
+
+Needed to run this so nimble:restivus would not error:
+
 `meteor add npm-bcrypt@0.8.7`
 
 `meteor npm install bcrypt`
 
-### May need to run this too
+May also need to rebuild npm packages:
+
 `meteor npm rebuild`
