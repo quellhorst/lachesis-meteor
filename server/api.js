@@ -9,7 +9,7 @@ Meteor.startup(function () {
   // Maps to api/v1/token-lookup
   Api.addRoute('bitcoin-price', {
     get: function () {
-      var bitcoin  = BitcoinPrices.findOne({});
+      var bitcoin  = BitcoinPrices.findOne({}, { sort: { createdAt: -1 } });
       if (bitcoin.price) {
         return {
           "price": bitcoin.price
