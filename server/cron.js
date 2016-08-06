@@ -1,7 +1,7 @@
 SyncedCron.config({
   log: false, // Log job run details to console
   logger: null, // Use a custom logger function (defaults to Meteor's logging package)
-  collectionName: 'CronHistory',
+  collectionName: 'cronHistory',
   utc: false,
   collectionTTL: 172800
 });
