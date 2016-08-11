@@ -1,0 +1,1 @@
+FROM kadirahq/meteord:onbuild
